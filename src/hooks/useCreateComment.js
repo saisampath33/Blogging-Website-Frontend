@@ -9,7 +9,7 @@ const createCommentApi = async (values) => {
     console.log("creteArticle", { values });
 
     const { data } = await axios.post(
-        `http://localhost:3001/api/articles/${values.slug}/comments`,
+        `https://blogging-website-backend-1-j9ye.onrender.com/api/articles/${values.slug}/comments`,
         { ...values.values }
       );
 
